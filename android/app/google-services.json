@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "760866133304",
+    "project_id": "swiggy-cc",
+    "storage_bucket": "swiggy-cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760866133304:android:b81271078a5e45470e5dcd",
+        "android_client_info": {
+          "package_name": "com.example.swiggy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdpQxEKyZ-dw7YTSQOaAJ1IdJMICLicYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"swiggy-cc","appId":"1:760866133304:android:b81271078a5e45470e5dcd","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"swiggy-cc","configurations":{"android":"1:760866133304:android:b81271078a5e45470e5dcd","ios":"1:760866133304:ios:4e75b09ca505f6d00e5dcd"}}}}}}
