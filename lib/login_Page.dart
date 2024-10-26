@@ -16,13 +16,13 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void dispose() {
-    phoneController.dispose(); // Dispose the controller when done
+    phoneController.dispose();
     super.dispose();
   }
 
-  // Method to validate phone number format
+  
   bool isValidPhoneNumber(String phone) {
-    RegExp regExp = RegExp(r'^\+\d{1,3}\d{1,14}$'); // E.164 format
+    RegExp regExp = RegExp(r'^\+\d{1,3}\d{1,14}$');
     return regExp.hasMatch(phone);
   }
 
@@ -63,7 +63,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
                       String phone = phoneController.text.trim();
 
-                      // Validate phone number format
                       if (!isValidPhoneNumber(phone)) {
                         setState(() {
                           isLoading = false;
@@ -80,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       await FirebaseAuth.instance.verifyPhoneNumber(
                         phoneNumber: phone,
                         verificationCompleted: (phoneAuthCredential) {
-                          // Auto-retrieval completed, handle the credential
+                    
                           log('Verification completed: ${phoneAuthCredential.smsCode}');
                         },
                         verificationFailed: (error) {
@@ -94,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         codeSent: (verificationId, forceResendingToken) {
                           setState(() {
-                            isLoading = false; // Stop loading after code is sent
+                            isLoading = false; 
                           });
                           Navigator.push(
                             context,
@@ -108,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         codeAutoRetrievalTimeout: (verificationId) {
                           log("Auto retrieval timeout for: $verificationId");
                           setState(() {
-                            isLoading = false; // Stop loading on timeout
+                            isLoading = false;
                           });
                         },
                       );

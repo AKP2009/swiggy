@@ -30,16 +30,16 @@ class _SecondlandingpageState extends State<Secondlandingpage> {
             ),
             Container(
               padding: const EdgeInsets.all(
-                  10), // Adds space between the image and the border
+                  10),
               decoration: BoxDecoration(
-                color: Colors.white, // White background for the border
+                color: Colors.white,
                 shape:
-                    BoxShape.rectangle, // Ensures the container is a rectangle
-                borderRadius: BorderRadius.circular(15), // Rounds the corners
+                    BoxShape.rectangle,
+                borderRadius: BorderRadius.circular(15),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black
-                        .withOpacity(0.1), // Optional: subtle shadow for depth
+                        .withOpacity(0.1),
                     blurRadius: 10,
                     spreadRadius: 5,
                   ),
@@ -47,11 +47,11 @@ class _SecondlandingpageState extends State<Secondlandingpage> {
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(
-                    15), // Ensures the image corners match the container
+                    15), 
                 child: Image.asset(
-                  'assets/logo.png', // Replace with your image path
-                  width: 50, // Adjust size as needed
-                  height: 50, // Adjust size as needed
+                  'assets/logo.png',
+                  width: 50, 
+                  height: 50,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -86,8 +86,8 @@ class _SecondlandingpageState extends State<Secondlandingpage> {
             Container(
               width: 375,
                 decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.2), // Increase opacity
-                  borderRadius: BorderRadius.circular(10.0), // Rounded edges
+                  color: Colors.black.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(10.0), 
                 ),
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
@@ -115,7 +115,7 @@ class _SecondlandingpageState extends State<Secondlandingpage> {
                     ],
                  ),
                     Container(
-                        height: 50.0, // Adjust height as needed to match text height
+                        height: 50.0,
                         width: 2.0,
                         color: Colors.white,
                       ),
@@ -142,9 +142,9 @@ class _SecondlandingpageState extends State<Secondlandingpage> {
                         ],
                       ),
                       
-                      // Divider with limited height
+                    
                       Container(
-                        height: 50.0, // Adjust height as needed to match text height
+                        height: 50.0, 
                         width: 2.0,
                         color: Colors.white,
                       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swiggy/FirstLandingPage.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';  // Add this line to import firebase_options.dart
+import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,11 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Hero Animation',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Firstlandingpage(), // Corrected class name
+      home: Firstlandingpage(),
     );
   }
 }
