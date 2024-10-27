@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:swiggy/LandingPage/SecondLandingPage.dart';
 
 class Firstlandingpage extends StatefulWidget {
+  Firstlandingpage({super.key});
   @override
   _firstlandingpageState createState() => _firstlandingpageState();
 }
@@ -22,11 +23,7 @@ class _firstlandingpageState extends State<Firstlandingpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: Hero(
-            tag: 'hero-logo',
-            child: Image.asset('assets/logo.png')),
-      ),
+      body: Center(child: Image.asset('assets/logo.png')),
     );
   }
 }
