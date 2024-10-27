@@ -1,7 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:swiggy/Data/food.dart';
-
-import 'package:swiggy/Data/place.dart';
 part 'food_provider.g.dart';
 
 List<Food> a = [
