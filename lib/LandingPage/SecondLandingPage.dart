@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:swiggy/OtpAUuth/BeforeLogin.dart';
 import 'dart:async';
 import 'package:swiggy/OtpAUuth/login_Page.dart';
 
@@ -14,7 +15,7 @@ class _SecondlandingpageState extends State<Secondlandingpage> {
     super.initState();
     Timer(const Duration(milliseconds: 1000), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => LoginScreen()),
+        MaterialPageRoute(builder: (context) => BeforeLogin()),
       );
     });
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:swiggy/OtpAUuth/BeforeLogin.dart';
 import 'dart:developer';
 import 'package:swiggy/OtpAUuth/Otp.dart';
 
@@ -120,26 +121,16 @@ class LoginScreen extends ConsumerWidget {
             ),
           ),
           Positioned(
-            top: 40,
-            right: 20,
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => OTPScreen(verificationId: "hiii"),
-                  ),
-                );
-              },
-              child: const Text(
-                "Skip",
-                style: TextStyle(
-                  color: Colors.orange,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+                    top: 5,
+                    left: 5,
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back, color: Colors.black),
+                      onPressed: () {
+                        Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) => BeforeLogin()),
+                      );
+                      },
+                    ),
           ),
         ],
       ),
