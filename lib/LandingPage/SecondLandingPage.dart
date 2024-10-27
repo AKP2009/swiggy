@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:swiggy/login_Page.dart';
+import 'package:swiggy/OtpAUuth/login_Page.dart';
 
 class Secondlandingpage extends StatefulWidget {
   @override

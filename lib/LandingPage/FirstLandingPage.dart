@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:swiggy/SecondLandingPage.dart';
+import 'package:swiggy/LandingPage/SecondLandingPage.dart';
 
 class Firstlandingpage extends StatefulWidget {
   @override
