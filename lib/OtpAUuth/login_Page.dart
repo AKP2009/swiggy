@@ -4,10 +4,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:developer';
 import 'package:swiggy/OtpAUuth/Otp.dart';
 
-// StateProvider to manage the loading state
+
 final isLoadingProvider = StateProvider<bool>((ref) => false);
 
-// Provider for phone verification
+
 final phoneVerificationProvider = Provider((ref) {
   return PhoneVerificationService(ref);
 });
